@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>iPay.Me</title>
+    <link rel="stylesheet" href="../css/iPay.Me.css">
+    <script>
+        function changeImage() {
+            element = document.getElementById('myimage')
+            if (element.src.match("turnon.png")) {
+                element.src = "../images/turnoff.png";
+            }
+            else {
+                element.src = "../images/turnon.png";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="demo">
+        <section class="ztl">
+            <img src="../images/状态栏.png" alt="">
+        </section>
+        <main class="dhl">
+            <a href="../htmls/my.html">
+                <div class="fh"></div>
+            </a>
+            <p class="dhlwz">您的iPay.Me</p>
+            <button class="btnck">查看并分享</button>
+        </main>
+        <div class="xf">
+            <div class="m1">
+                <p class="heise">ipay.me/KevonLin</p>
+                <br>
+                <p class="huise">您可以通过您的iPay.Me链接收款</p>
+                <a href="#" class="kg">
+                    <img src="../images/turnon.png" alt="" id="myimage" onclick="changeImage()">
+                </a>
+            </div>
+            <hr>
+            <div class="m2">
+                <p class="heise">您接受：<br>
+                    商品和服务
+                </p>
+                <br>
+                <p class="huise">根据金额和比重收取费用。无需申请，符合条件得销售可自<br>
+                    动享受
+                    <span><a href="">卖家保障</a></span>
+                </p>
+                <br>
+                <hr>
+            </div>
+            <div class="m3">
+                <p class="huise">
+                    关于您的更多信息
+                </p>
+            </div>
+            <hr>
+            <div class="m4">
+                <p class="heise">
+                    位置：<br>
+                    河南，郑州<br>
+                </p>
+            </div>
+            <hr>
+            <div class="m5">
+                <p class="heise">
+                    个人消息<br>
+                </p>
+            </div>
+            <hr>
+            <div class="m6">
+                <p class="heise">
+                    背景图像<br>
+                    <br>
+                    查看<span><a href="">条款和条件</a></span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

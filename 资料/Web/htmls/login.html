@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+
+    <style>
+        body {
+            margin: 0;
+            /* background-color: black; */
+        }
+
+        section {
+            width: 750px;
+            margin: auto;
+            position: relative;
+        }
+
+        input {
+            width: 520px;
+            height: 60px;
+        }
+
+        .tmain {
+            width: 750px;
+            height: 1334px;
+            position: absolute;
+        }
+
+        .srk {
+            width: 500px;
+            height: 200px;
+            position: absolute;
+            top: 434px;
+            left: 120px;
+        }
+
+        input {
+            font-family: 苹方;
+            font-size: 24px;
+        }
+
+        input:nth-child(1) {
+            width: 486px;
+            height: 58px;
+            border: none;
+            padding-left: 20px;
+            position: relative;
+            top: 2px;
+        }
+
+        input:nth-child(2) {
+            width: 486px;
+            height: 58px;
+            border: none;
+            padding-left: 20px;
+            position: relative;
+            top: 56px;
+        }
+    </style>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("user").value;
+            var y = document.getElementById("pwd").value
+            if (x == "admin" && y == "admin") {
+                window.location.href = '../htmls/home.html'
+            }
+            else if (x == "15613552667" && y == "123456") {
+                window.location.href = '../htmls/home.html'
+            }
+            else {
+                alert("用户名或密码错误")
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <section>
+        <div class="tmain">
+            <img usemap="#login" src="../images/登录.png" alt="">
+            <map name="login">
+                <!-- 登录按钮 -->
+                <area shape="rect" coords="110,750,636,812" href="#" alt="" onclick="myFunction()">
+                <!-- 无法登录 -->
+                <area shape="rect" coords="320,870,427,895" href="#" alt="">
+                <!-- 注册 -->
+                <area shape="rect" coords="110,993,636,1059" href="../htmls/register.html" alt="">
+            </map>
+        </div>
+
+    </section>
+</body>
+
+</html>

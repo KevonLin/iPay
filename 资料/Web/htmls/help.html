@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>帮助</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        #demo {
+            width: 750px;
+            height: 1334px;
+            margin:auto;
+            position: relative;
+            text-align: center;
+        }
+
+        input {
+            width: 440px;
+            height: 38px;
+            position: absolute;
+            top: 179px;
+            left: 120px;
+            border: none;
+            font-size: 24px;
+            padding-left: 10px;
+            font-family: 苹方;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="demo">
+        <img usemap="#help" src="../images/帮助.png" alt="">
+        <map name="help">
+            <!-- 返回 -->
+            <area shape="rect" coords="30,74,100,97" href="../htmls/my.html" alt="">
+            <!-- 搜索按钮 -->
+            <area shape="poly" coords="580,176,633,176,635,179,635,222,633,224,580,224" href="../htmls/my.html" alt="">
+            <!-- 文字1 -->
+            <area shape="rect" coords="40,440,347,463" href="#" alt="">
+            <!-- 文字2 -->
+            <area shape="rect" coords="40,485,361,512" href="#" alt="">
+            <!-- 文字3 -->
+            <area shape="rect" coords="40,532,353,559" href="#" alt="">
+            <!-- 文字4 -->
+            <area shape="rect" coords="40,580,160,608" href="#" alt="">
+        </map>
+        <input type="text" placeholder="搜索常见问题">
+    </div>
+</body>
+
+</html>

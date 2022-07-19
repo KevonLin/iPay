@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 苹方;
+            background-color: #000000;
+        }
+
+        .timg {
+            width: 750px;
+            height: 1334px;
+            position: absolute;
+        }
+
+        .wbk {
+            width: 528px;
+            height: 540px;
+            position: absolute;
+            /* background-color: brown; */
+            top: 436px;
+            left: 114px;
+        }
+
+        input {
+            width: 510px;
+            height: 54px;
+            position: relative;
+            left: 4px;
+            font-size: 24px;
+            font-family: 苹方;
+            border: none;
+        }
+
+        input:nth-child(1) {
+            position: relative;
+            top: 2px;
+        }
+
+        input:nth-child(2) {
+            position: relative;
+            top: 64px;
+        }
+
+        input:nth-child(3) {
+            position: relative;
+            top: 126px;
+        }
+
+        .yzm {
+            width: 120px;
+            height: 60px;
+            border-radius: 10px;
+            border: 2px solid #BFBFBF;
+            position: relative;
+            background-color: white;
+            left: 400px;
+            top: -64px;
+            font-size: 18px;
+            z-index: 9;
+        }
+
+        .zc {
+            width: 200px;
+            height: 80px;
+            background-color: #0A72D9;
+            font-size: 24px;
+            border: none;
+            border-radius: 50px;
+            z-index: 10;
+            color: white;
+            position: relative;
+            top: 276px;
+            left: 36px;
+            font-family: 苹方;
+        }
+    </style>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("user").value;
+            var y = document.getElementById("pwd").value;
+            var z = document.getElementById("yzm").value;
+            if (x == "admin" && y == "admin" && z=="123456") {
+                window.location.href = './login.html'
+            }
+            else if (x == "15613552667" && y == "123456" && z=="123456")
+            {
+                window.location.href = './login.html'
+            }
+            else 
+            {
+                alert("验证码错误")
+            }
+        }
+
+        function tyzm() {
+            alert ("您的验证码是:123456")
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <div class="timg">
+        <img usemap="#register" src="./注册.png" alt="">
+        <map name="register">
+            <!-- 去登录 -->
+            <area shape="rect" coords="421,1015,469,1035" href="./login.html" alt="">
+        </map>
+    </div>
+    <div class="wbk">
+        <input type="text" placeholder="手机号" id="user">
+        <input type="text" placeholder="验证码" id="yzm">
+        <input type="password" placeholder="密码" id="pwd">
+        <a href="#">
+            <button class="yzm" onclick="tyzm()">获取验证码</button>
+        </a>
+        <a href="#">
+            <button class="zc"  onclick="myFunction()">注册</button>
+        </a>
+    </div>
+</body>
+
+</html>

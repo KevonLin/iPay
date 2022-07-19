@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>通讯录</title>
+    <style>
+        body {
+            margin: 0;
+            text-align: center;
+        }
+
+        .demo {
+            width: 750px;
+            height: 1334px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        input {
+            width: 600px;
+            height: 34px;
+            position: absolute;
+            border: none;
+            font-size: 20px;
+            font-family: 苹方;
+            padding-top: 2px;
+            top: 144px;
+            left: 94px;
+            background-color: #F5F5F5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo">
+        <div>
+            <img usemap="#friends" src="../images/联系人.png" alt="">
+            <map name="friends">
+                <!-- 返回 -->
+                <area shape="rect" coords="30,87,134,118" href="../htmls/friend.html" alt="">
+                <!-- 添加 -->
+                <area shape="rect" coords="680,87,720,118" href="../htmls/add_friedns.html" alt="">
+            </map>
+        </div>
+        <div>
+            <input type="text" placeholder="搜索">
+        </div>
+    </div>
+</body>
+
+</html>

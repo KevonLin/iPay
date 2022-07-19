@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        section {
+            width: 750px;
+            height: 1334px;
+            margin: auto;
+            position: relative;
+        }
+
+        .timg {
+            width: 750px;
+            height: 1334px;
+            position: relative;
+        }
+
+        .wbk {
+            width: 500px;
+            height: 34px;
+            position: absolute;
+            top: 64px;
+            left: 140px;
+        }
+
+        input {
+            width: 460px;
+            height: 34px;
+            /* position: absolute; */
+            border: none;
+            font-size: 20px;
+            font-family: 苹方;
+            padding-top: 4px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <section>
+
+
+        <div class="timg">
+            <img usemap="#home" src="../images/首页.png" alt="">
+            <map name="home">
+                <!-- <area shape="rect" coords="94,58,619,107" href="" alt=""> -->
+                <!-- 消息 -->
+                <area shape="rect" coords="628,58,670,107" href="../htmls/msg.html" alt="">
+                <!-- 扫一扫 -->
+                <area shape="rect" coords="680,58,720,107" href="../htmls/scan.html" alt="">
+                <!-- banner -->
+                <area shape="rect" coords="33,137,710,384" href="#" alt="">
+                <!-- 付款 -->
+                <area shape="circle" coords="102,465,50" href="../htmls/pay_home.html" alt="">
+                <!-- 收款 -->
+                <area shape="circle" coords="282,465,50" href="../htmls/receive_home.html" alt="">
+                <!-- 账单 -->
+                <area shape="circle" coords="470,465,50" href="../htmls/zd.html" alt="">
+                <!-- 记录 -->
+                <area shape="circle" coords="650,465,50" href="../htmls/history_home.html" alt="">
+                <!-- 优惠 -->
+                <area shape="rect" coords="45,765,708,710" href="../htmls/discount.html" alt="">
+                <!-- 图1 -->
+                <area shape="rect" coords="54,800,694,1050" href="#" alt="">
+                <!-- 图2 -->
+                <area shape="rect" coords="54,1100,694,1234" href="#" alt="">
+                <!-- 钱包 -->
+                <area shape="rect" coords="200,1240,400,1326" href="../htmls/wallet.html" alt="">
+                <!-- 朋友 -->
+                <area shape="rect" coords="386,1240,510,1326" href="../htmls/friend.html" alt="">
+                <!-- 我的 -->
+                <area shape="rect" coords="580,1240,710,1326" href="../htmls/my.html" alt="">
+            </map>
+        </div>
+        <div class="wbk">
+            <input type="text" placeholder="搜索">
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>账单</title>
+    <style>
+        body {
+            margin: 0;
+            /* background-color: black; */
+        }
+
+        .month {
+            width: 60px;
+            height: 30px;
+            border: none;
+            font-family: 苹方;
+            position: absolute;
+            top: 202px;
+            left: 30px;
+        }
+
+        .sx {
+            width: 64px;
+            height: 40px;
+            border: none;
+            font-family: 苹方;
+            position: absolute;
+            top: 130px;
+            left: 30px;
+            font-size: 18px;
+        }
+
+        .fl {
+            width: 64px;
+            height: 40px;
+            border: none;
+            font-family: 苹方;
+            position: absolute;
+            top: 130px;
+            left: 180px;
+            font-size: 18px;
+        }
+
+        div {
+            position: absolute;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <img usemap="#zd" src="./账单.png" alt="">
+        <map name="zd">
+            <!-- 返回 -->
+            <area shape="rect" coords="30,74,100,97" href="./home.html" alt="">
+            <!-- 更多 -->
+            <area shape="rect" coords="680,65,720,107" href="#" alt="">
+            <!-- 搜索 -->
+            <area shape="rect" coords="680,136,720,160" href="#" alt="">
+            <!-- 账单 -->
+            <area shape="rect" coords="181,1193,261,1304" href="#" alt="">
+            <!-- 统计 -->
+            <area shape="rect" coords="474,1193,567,1304" href="#" alt="">
+        </map>
+    </div>
+    <div>
+        <select class="month">
+            <option value="1">1月</option>
+            <option value="2">2月</option>
+            <option value="3">3月</option>
+            <option value="4">4月</option>
+            <option value="5">5月</option>
+            <option value="6">6月</option>
+            <option value="7">7月</option>
+            <option value="8">8月</option>
+            <option value="9">9月</option>
+            <option value="10">10月</option>
+            <option value="11">11月</option>
+            <option value="12">12月</option>
+        </select>
+        <select class="sx">
+            <option value="1">筛选</option>
+            <option value="2">--</option>
+        </select>
+        <select class="fl">
+            <option value="1">分类</option>
+            <option value="2">--</option>
+            <option value="2">按时间</option>
+            <option value="2">按金额</option>
+        </select>
+    </div>
+</body>
+
+</html>

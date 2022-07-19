@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>交易记录</title>
+
+    <style>
+        body {
+            margin: 0;
+            /* background-color: black; */
+            overflow: hidden;
+        }
+
+        section {
+            width: 750px;
+            height: 1334px;
+            margin: auto;
+        }
+
+        div {
+            position: absolute;
+        }
+
+        input {
+            width: 670px;
+            height: 58px;
+            position: absolute;
+            top: 146px;
+            left: 60px;
+            border: none;
+            font-size: 24px;
+            padding-left: 10px;
+            font-family: 苹方;
+        }
+
+        .msg {
+            width: 750px;
+            height: 1200px;
+            position: relative;
+            top: 284px;
+            border: none;
+            background-color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <section>
+        <div>
+            <img usemap="#history" src="../images/交易记录.png" alt="">
+            <map name="history">
+                <!-- 返回 -->
+                <area shape="rect" coords="30,74,46,97" href="../htmls/my.html" alt="">
+                <!-- 筛选 -->
+                <area shape="rect" coords="680,65,720,107" href="#" alt="">
+                <!-- 全部 -->
+                <area shape="rect" coords="0,226,100,285" href="../htmls/content3.html" target="content" alt="">
+                <!-- 收入 -->
+                <area shape="rect" coords="100,226,200,285" href="../htmls/content1.html" target="content" alt="">
+                <!-- 支出 -->
+                <area shape="rect" coords="200,226,300,285" href="../htmls/content2.html" target="content" alt="">
+            </map>
+        </div>
+        <div>
+            <input type="text" placeholder="输入姓名、邮箱地址、手机号码等信息">
+        </div>
+        <iframe class="msg" name="content" src="../htmls/content3.html" alt="">
+        </iframe>
+    </section>
+</body>
+
+</html>
